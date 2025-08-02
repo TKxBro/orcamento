@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento Detalhado</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Applying Inter font to the body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8 max-w-4xl">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Orçamento de Peças</h1>
+            <p class="text-gray-600 mt-2">Resumo detalhado dos itens, quantidades e valores.</p>
+        </header>
+
+        <!-- Budget Table -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <!-- Table Head -->
+                    <thead class="bg-gray-100 border-b border-gray-200">
+                        <tr>
+                            <th class="py-4 px-6 font-semibold text-gray-700">Produto</th>
+                            <th class="py-4 px-6 font-semibold text-gray-700 text-center">Quantidade</th>
+                            <th class="py-4 px-6 font-semibold text-gray-700 text-right">Preço Unitário</th>
+                            <th class="py-4 px-6 font-semibold text-gray-700 text-right">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <!-- Table Body -->
+                    <tbody>
+                        <!-- Item 1 -->
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-4 px-6 font-medium">Taças Lisas</td>
+                            <td class="py-4 px-6 text-center">2.141</td>
+                            <td class="py-4 px-6 text-right">R$ 10,00</td>
+                            <td class="py-4 px-6 text-right">R$ 21.410,00</td>
+                        </tr>
+                        <!-- Item 2 -->
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-4 px-6 font-medium">Taças Lapidadas</td>
+                            <td class="py-4 px-6 text-center">1.022</td>
+                            <td class="py-4 px-6 text-right">R$ 15,00</td>
+                            <td class="py-4 px-6 text-right">R$ 15.330,00</td>
+                        </tr>
+                        <!-- Item 3 -->
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-4 px-6 font-medium">Abajur Atlas</td>
+                            <td class="py-4 px-6 text-center">45</td>
+                            <td class="py-4 px-6 text-right">R$ 100,00</td>
+                            <td class="py-4 px-6 text-right">R$ 4.500,00</td>
+                        </tr>
+                        <!-- Item 4 -->
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-4 px-6 font-medium">Abajur Gerbera</td>
+                            <td class="py-4 px-6 text-center">7</td>
+                            <td class="py-4 px-6 text-right">R$ 100,00</td>
+                            <td class="py-4 px-6 text-right">R$ 700,00</td>
+                        </tr>
+                        <!-- Item 5 -->
+                        <tr class="border-b border-gray-200 hover:bg-gray-50">
+                            <td class="py-4 px-6 font-medium">Abajur Diversos</td>
+                            <td class="py-4 px-6 text-center">8</td>
+                            <td class="py-4 px-6 text-right">R$ 50,00</td>
+                            <td class="py-4 px-6 text-right">R$ 400,00</td>
+                        </tr>
+                        <!-- Item 6 -->
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-4 px-6 font-medium">Vasos, Base de Abajur</td>
+                            <td class="py-4 px-6 text-center">25</td>
+                            <td class="py-4 px-6 text-right">R$ 50,00</td>
+                            <td class="py-4 px-6 text-right">R$ 1.250,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Totals Section -->
+        <div class="mt-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Resumo do Orçamento</h2>
+            <div class="space-y-3">
+                <!-- Total Pieces -->
+                <div class="flex justify-between items-center text-lg">
+                    <span class="font-medium text-gray-600">Total de Peças:</span>
+                    <span class="font-semibold text-gray-800">3.248</span>
+                </div>
+                <!-- Total Value -->
+                <div class="flex justify-between items-center text-xl pt-3 border-t border-gray-200 mt-3">
+                    <span class="font-bold text-gray-900">Valor Total do Orçamento:</span>
+                    <span class="font-bold text-green-600">R$ 43.590,00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-10 text-sm text-gray-500">
+            <p>Orçamento gerado em 02/08/2025.</p>
+            <p>Este é um documento informativo e os valores podem estar sujeitos a alterações.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
